@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="80dp"
+android:background="#262431">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contact_dia"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:layout_marginBottom="5dp"
+    android:layout_toRightOf="@+id/lblStaus"
+    android:layout_toEndOf="@+id/lblStaus">
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:id="@+id/imgMovementStatus"
+        android:src="@drawable/loc_new_red"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nofication"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:id="@+id/cv">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblMovementDate"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="No Movement Data"
+            android:id="@+id/lblMovementAddress"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/lblStaus"
+        android:background="#d27661" />
+
+</RelativeLayout>

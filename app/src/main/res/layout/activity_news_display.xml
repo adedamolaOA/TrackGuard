@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:id="@+id/home"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3"
+        android:layout_gravity="left|top"
+        android:layout_below="@+id/tool_bar"
+        android:fillViewport="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblSubject"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView34"
+                android:background="#9a9aa3" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblSourceAuthor"
+                android:textColor="#4d5eff"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblTimeAgo"
+                android:layout_marginBottom="5dp"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/cvbn"
+                android:background="#9a9aa3" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblBulletin"
+                android:layout_marginLeft="10dp"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:layout_weight="0.28" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/imageNews" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lblNews" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

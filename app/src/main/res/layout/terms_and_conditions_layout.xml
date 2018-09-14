@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Your Access to and use of the Service is conditioned on your acceptance of and compliance with the terms and conditions. These Terms apply to all visitors and users who access or use the service "
+            android:id="@+id/textView12"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="By Accessing or using the service you agree to be bound by these terms. if you disagree with any part of the terms then you may not access the Service.  "
+            android:id="@+id/textView13"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DISCLAIMER"
+            android:id="@+id/textView14"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1. This application or any of its contents, no matter how explicit, should not be regarded as an offer, solicitation, recommendation or agreement, to enter into any type of contract by the company. Our  company only honors contracts which are signed by authorized officers. If in any doubt, kindly ask for a signed document, or confirmation of authorized officers."
+            android:id="@+id/textView22"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" 2. While all reasonable care has been taken to avoid the transmission or viruses, it is the responsibility of the recipient to ensure that the onward transmission, opening or use of this application and any attachments will not adversely affect its systems or data. No responsibility is accepted by the the firm in this regard and the recipient should carry out such virus and other checks as it considers appropriate."
+            android:id="@+id/textView23"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The location is approximate, with an approximate distance of 1000 meters in correction. Mobile Guard shall not be held responsible for mis-use of this information. "
+            android:id="@+id/textView32"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="TERMS"
+            android:id="@+id/textView24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Our Service allows you to share your location with panic contacts and you are responsible for making sure your location is not disclosed to unwanted and unknown individuals. Mobile Guard Only shares information with Individuals on your Panic Contact and will not be held responsible for how that contact uses you information."
+            android:id="@+id/textView25"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Some Parts of the Service are billed on a subscription basis. You will be billed in advance on a recurring period of 1 Week at the rate of N30, this service can be stopped by Switching Mobile Guard Services Off but charges will be applied if the Mobile Guard Services is switched on. "
+            android:id="@+id/textView26"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="We reserve the right, at our sole discretion to modify or replace these Terms and Conditions at any time. if a revision is material we will try to provide at least 30 days notice prior to any new terms talking effect. what constitutes a material change will be determined at our sole discretion."
+            android:id="@+id/textView28"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="If you have any questions about these Terms and Conditions please contact us."
+            android:id="@+id/textView27"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="I Agree"
+            android:id="@+id/butIAgree"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="I Disagree"
+            android:id="@+id/butIDisagree"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</ScrollView>

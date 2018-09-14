@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:id="@+id/home"
+    android:background="#303030">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/homes"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:layout_below="@+id/tool_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butHomePanicAlert"
+            android:layout_gravity="center"
+            android:src="@drawable/panic"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_below="@+id/tool_bar"
+            android:orientation="vertical"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_below="@+id/tool_bar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_below="@+id/tool_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/ic_person_white_18dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_below="@+id/tool_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/lblFriendCount"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textAlignment="gravity"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="73dp"
+            android:layout_height="129dp"
+            android:layout_gravity="left|top"
+            android:id="@+id/messageLayout"
+            android:layout_below="@+id/tool_bar">
+
+            <ImageButton
+                android:layout_below="@+id/tool_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/butNotification"
+                android:src="@drawable/nft"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="1dp" />
+
+            <ImageButton
+                android:layout_below="@+id/tool_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/butTrackMyMovement"
+                android:src="@drawable/loc_icu"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/tool_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mis-use of this emergency service will lead to serious legal actions "
+            android:id="@+id/lblWarning"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+    </FrameLayout>
+</RelativeLayout>

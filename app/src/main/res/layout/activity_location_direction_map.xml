@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ade.leke.com.trackguard.ReportViolationActivity"
+    android:background="#303030"
+    android:nestedScrollingEnabled="true"
+    android:id="@+id/kk">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:fillViewport="true"
+        android:layout_below="@+id/tool_bar">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/linearLayout"
+            android:nestedScrollingEnabled="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#03a9f4"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ccvb">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="My Location Address"
+                    android:id="@+id/textView20"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="39dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Retrieving Location Address"
+                    android:id="@+id/lblCurrentLocationAddress"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Destination Location Address"
+                    android:id="@+id/lblDestinationLocationAddress"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="39dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Retrieving Location Address"
+                    android:id="@+id/lblDestinationOutput"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <fragment android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/mapL"
+                tools:context="ade.leke.com.trackguard.ContactDisplayActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_weight="0.15" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

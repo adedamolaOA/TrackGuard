@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_non_selected">#303030</color>
+    <color name="color_selected">#618aec</color>
+    <color name="selected_green">#1fa614</color>
+    <color name="ColorPrimary">#4E7AC7</color>
+    <color name="ColorPrimaryDark">#35478C</color>
+    <color name="ColorPrimary_S">#43535a</color>
+    <color name="ColorPrimaryDark_S">#242c30</color>
+    <color name="ColorPrimary_N">#FF5722</color>
+    <color name="ColorPrimaryDark_N">#E64A19</color>
+</resources>

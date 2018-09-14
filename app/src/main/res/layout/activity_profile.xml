@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ade.leke.com.trackguard.RegistrationActivity"
+    android:id="@+id/regRelative">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/registrationLayout"
+            android:weightSum="1"
+            android:focusableInTouchMode="false"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagePreview"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_photo_size_select_actual_black_24dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Profile Picture"
+                android:id="@+id/butGallery"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Firstname"
+                android:id="@+id/textView16"
+                android:layout_marginTop="10dp"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProfileFirstname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Surname"
+                android:id="@+id/textView17"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProfileOthernames"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobile Number"
+                android:id="@+id/textView18"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtProfileMobile"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email"
+                android:id="@+id/textView19"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress|textWebEmailAddress"
+                android:ems="10"
+                android:id="@+id/txtProfileEmail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Access Code"
+                android:id="@+id/butChangeAccessCode"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Access Code"
+                android:id="@+id/butForgot"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:id="@+id/butUpdateProfile"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

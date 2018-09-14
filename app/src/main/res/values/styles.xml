@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. Theme.AppCompat.Light.DarkActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+
+
+    </style>
+    <style name="AppTheme_normal" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary_N</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark_N</item>
+
+
+    </style>
+
+    <style name="AppTheme_Panic" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary_S</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark_S</item>
+
+
+    </style>
+
+    <!-- ActionBar styles -->
+
+
+</resources>

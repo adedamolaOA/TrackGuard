@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Mobile Guard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="send_email">Send Email</string>
+    <string name="movement_delete">Delete Movement Record</string>
+    <string name="reload_map">Reload Map In Grouped View</string>
+    <string name="contact">Panic Contact</string>
+    <string name="marchive">Movement Archive</string>
+    <string name="contact_add">Add Contact</string>
+    <string name="contact_request">Request Location</string>
+    <string name="task">Movement Log</string>
+    <string name="refresh_map">Refresh</string>
+    <string name="more_information">About Us</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="appwidget_text">Mobile Guard</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_report_violation">ReportViolationActivity</string>
+    <string name="add_note">Add Note</string>
+    <string name="camera">Take Picture</string>
+    <string name="gallery">Gallery</string>
+    <string name="title_activity_panic_alert">PanicAlert</string>
+    <string name="title_activity_contact_maps">Keeper</string>
+    <string name="title_activity_contact_display">ContactDisplayActivity</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="findphone">Missing Phone Alert</string>
+    <string name="delete_notification">Delete Notification</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="track_contact">Track Contact</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_view_notification">ViewNotificationActivity</string>
+    <string name="title_activity_mg_settings">MgSettingsActivity</string>
+    <string name="title_activity_more_information">MoreInformationActivity</string>
+
+    <string-array name="panic_interval">
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+
+    </string-array>
+
+    <string-array name="movement_interval">
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+
+    </string-array>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_movement">MovementActivity</string>
+    <string name="title_activity_movement_map">MovementMapActivity</string>
+    <string name="error_loc_latlng">No Address Found</string>
+    <string name="title_activity_location_direction_map">LocationDirectionMap</string>
+    <string name="title_activity_panic_location_direction_map">PanicLocationDirectionMap</string>
+    <string name="title_activity_movement_main">MovementMainActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_terms">TermsActivity</string>
+    <string name="title_activity_main2">Mobile Guard</string>
+    <string name="openDrawer">Mobile Guard</string>
+    <string name="closeDrawer">Mobile Guard</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_news_display">NewsDisplayActivity</string>
+
+</resources>

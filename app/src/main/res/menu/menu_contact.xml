@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ade.leke.com.trackguard.ContactActivity">
+    <item android:id="@+id/contact_request" android:title="@string/contact_request"
+        android:icon="@drawable/request_location_new"
+        app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/contact_adds" android:title="@string/contact_add"
+        android:icon="@drawable/add_panic_user"
+        app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/find_phone" android:title="@string/findphone"
+        android:icon="@drawable/find_phone"
+        app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/edit_contact" android:title="@string/edit_contact"
+        android:icon="@drawable/ic_mode_edit_white_18dp"
+        app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/delete_contact" android:title="@string/delete_contact"
+        android:icon="@drawable/ic_delete_white_18dp"
+        app:showAsAction="withText|ifRoom" />
+
+</menu>

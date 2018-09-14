@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="ade.leke.com.trackguard.ReportViolationActivity"
+android:background="#303030"
+android:nestedScrollingEnabled="true"
+    android:id="@+id/con">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:weightSum="1">
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="330dp" android:id="@+id/map1"
+        tools:context="ade.leke.com.trackguard.ContactMapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Panic"
+        android:id="@+id/butReport"
+        android:layout_gravity="center"
+        android:gravity="left|center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Request To Track"
+        android:id="@+id/button3"
+        android:gravity="left|center"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="none" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Contact Information"
+        android:id="@+id/button"
+        android:gravity="left|center"
+        android:capitalize="none" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Contact"
+        android:id="@+id/button2"
+        android:gravity="left|center"
+        android:capitalize="none" />
+
+</LinearLayout>
+
+</RelativeLayout>
+

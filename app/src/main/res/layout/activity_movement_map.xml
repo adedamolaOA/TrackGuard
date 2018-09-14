@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ade.leke.com.trackguard.ReportViolationActivity"
+    android:background="#303030"
+    android:nestedScrollingEnabled="true"
+    android:id="@+id/kkmm">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/tool_bar"
+        android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/linearLayout"
+        android:gravity="fill"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/selected_green"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Location Address"
+                android:id="@+id/lblLocationAddressLBL"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Retrieving Location Address "
+                android:id="@+id/lblMoveAddress"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Latituide"
+                android:id="@+id/lblLatLBL"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0.0"
+                android:id="@+id/lblMoveMapLat"
+                android:textColor="#ffffff"
+                android:paddingLeft="31dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Longtuide"
+                android:id="@+id/lblLngLBL"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0.0"
+                android:id="@+id/lblMoveMapLng"
+                android:textColor="#ffffff"
+                android:paddingLeft="23dp" />
+        </LinearLayout>
+
+        <fragment android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/mapM"
+            tools:context="ade.leke.com.trackguard.ContactDisplayActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

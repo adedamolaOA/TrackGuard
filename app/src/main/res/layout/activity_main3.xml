@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:id="@+id/home"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3"
+        android:layout_gravity="left|top"
+        android:layout_below="@+id/tool_bar"
+        android:fillViewport="true"
+        android:layout_marginRight="10dp">
+
+    <FrameLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/homes"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageContact"
+            android:layout_gravity="left|top"
+            android:src="@drawable/users_r"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageMovementLog"
+            android:layout_gravity="right|top"
+            android:src="@drawable/book_r"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageNotification"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/mail_r"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageCurrentLocation"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/map_pin_r"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageSettings"
+            android:layout_gravity="left|bottom"
+            android:src="@drawable/settings_r"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageAboutUs"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/grid_r"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp" />
+
+    </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

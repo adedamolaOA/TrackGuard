@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ade.leke.com.trackguard.RegistrationActivity"
+    android:id="@+id/regRelative">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/registrationLayout"
+        android:weightSum="1"
+        android:focusableInTouchMode="false"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sign Up for an account with Mobile Guard to able you enjoy the features."
+            android:id="@+id/lblRegMsg"
+            android:textColor="#262626" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Firstname"
+            android:id="@+id/textView16"
+            android:layout_marginTop="10dp"
+            android:textColor="#010101"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRegFirstname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Surname"
+            android:id="@+id/textView17"
+            android:textColor="#010101"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRegOthernames" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mobile Number"
+            android:id="@+id/textView18"
+            android:textColor="#010101"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txtRegMobile"
+            android:maxLength="11"
+            android:phoneNumber="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email"
+            android:id="@+id/textView19"
+            android:textColor="#010101"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textWebEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtRegEmail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Access Code"
+            android:id="@+id/textView7"
+            android:layout_marginTop="10dp"
+            android:textColor="#010101"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAccessCode"
+            android:maxLength="6"
+            android:password="true"
+            android:inputType="number|textPassword" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Clicking Sign Up, you agree to our terms and conditions and that you have read it."
+            android:id="@+id/chkbxTerms"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:layout_weight="1.21" />
+
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Term and Conditions"
+            android:id="@+id/butTermsAndConditions"
+            android:textColor="#483fff"
+            android:background="@android:color/transparent"
+            android:capitalize="none"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/butRegister" />
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

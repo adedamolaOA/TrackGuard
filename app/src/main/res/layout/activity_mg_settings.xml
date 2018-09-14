@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ade.leke.com.trackguard.MgSettingsActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="10dp"
+        android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yuiyiu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Panic Alert Interval"
+            android:id="@+id/lblPAI"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#2f2f2f" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/panic_spinner"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Movement Log Interval"
+            android:id="@+id/lblMLI"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#2f2f2f" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movement_spinner"
+            android:spinnerMode="dialog" />
+
+        <Switch
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Guard Services"
+            android:id="@+id/mgsSwitch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="true"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Select Panic Alert Interval to let the system know which periods to send panic alerts to contacts"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/mgsSwitch"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Charges apply depending on your Network Provider"
+            android:id="@+id/textView4"
+            android:textColor="#c02b0d"
+            android:textStyle="bold" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go Dark"
+            android:id="@+id/goDarkSwitch"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Go Dark allow the user to refuse tracking and request for location."
+            android:id="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn Off Phone Missing Alert"
+            android:id="@+id/switchTurnOff"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="To Turn Off Phone Missing Alert, turn the switch to the off position."
+            android:id="@+id/textView33"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIM Card Status"
+            android:id="@+id/goSIMswitch"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Will only be off if a SIM Card has been change, in this case switch it on to update SIM Card Status."
+            android:id="@+id/textView15"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

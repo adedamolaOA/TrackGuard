@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ade.leke.com.trackguard.MovementMapActivity">
+    <item android:id="@+id/reloadmap" android:title="@string/reload_map"
+        android:icon="@drawable/map_switch"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@+id/send_email" android:title="@string/send_email"
+        android:icon="@drawable/send_email"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@+id/delete" android:title="@string/movement_delete"
+        android:icon="@drawable/delete"
+        android:orderInCategory="100" app:showAsAction="collapseActionView" />
+
+
+</menu>
